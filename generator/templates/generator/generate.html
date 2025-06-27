@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <select name="content_type">
+        <option value="product">Product Description</option>
+    </select>
+    <textarea name="prompt" rows="4" cols="50" placeholder="Enter your content prompt here"></textarea>
+    <button type="submit">Generate Content</button>
+</form>
+{% endblock %}

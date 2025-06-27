@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Generated Content</h1>
+<div>{{ content|linebreaks }}</div>
+<a href="{% url 'generate_content' %}">Generate More Content</a>
+{% endblock %}
