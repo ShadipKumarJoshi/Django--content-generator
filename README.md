@@ -15,7 +15,6 @@ pip install django requests
 pip install -r requirements.txt
 
 # Run
-cd weather_dashboard
 py manage.py runserver
 
 - Tailwind should be properly configured in `settings.py` using [django-tailwind](https://django-tailwind.readthedocs.io/en/latest/).
